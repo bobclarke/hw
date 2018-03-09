@@ -1,5 +1,3 @@
-import com.stack1.testlib.Context
-import com.stack1.testlib.Handlers
 
 def sayHello(){
 	echo "Hello World")
