@@ -1,6 +1,6 @@
 #!/bin/groovy
 
-@Library('jenkins-lib')
+@Library('plib')
 import com.stack1.plib.*
 
 def configuration = "config.json"
