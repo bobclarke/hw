@@ -1,6 +1,6 @@
 
 def sayHello(){
-	echo "Hello World")
+	echo "Hello World"
 }
 
 def pack( String targetEnv ){

@@ -3,7 +3,7 @@
 @Library('plib')
 import com.stack1.testlib.*
 
-def packager = "./pipeline/package/package.groovy"
+def packager = "package/package.groovy"
 
 Handlers handlers = new Handlers( packager )
 
