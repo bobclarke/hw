@@ -3,5 +3,24 @@
 @Library('plib')
 import com.stack1.testlib.*
 
-def z = new com.stack1.testlib.Zot()
-z.checkOutFrom("hw.git")
+def packager = 'package/package.groovy'
+
+Handlers handlers = new Handlers( packager )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//def z = new com.stack1.testlib.Zot()
+//z.checkOutFrom("hw.git")
