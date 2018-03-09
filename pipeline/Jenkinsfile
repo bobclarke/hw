@@ -1,7 +1,7 @@
 #!/bin/groovy
 
 @Library('plib')
-import com.stack1.test-lib.*
+import com.stack1.testlib.*
 
 def z = new com.stack1.test-lib.Zot()
 z.checkOutFrom("hw.git")
