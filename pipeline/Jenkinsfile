@@ -7,6 +7,7 @@ def packager = 'package/package.groovy'
 
 Handlers handlers = new Handlers( packager )
 
+invoke( handlers )
 
 
 
