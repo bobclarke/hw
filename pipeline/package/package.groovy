@@ -1,6 +1,6 @@
-def pack(String targetBranch, String targetEnv, context){
+def pack( String targetEnv ){
 
-  def applicationServerEnv = context.config.application.SERVER_ENV ?: 'production'
+  //def applicationServerEnv = context.config.application.SERVER_ENV ?: 'production'
 
   node(){
 
