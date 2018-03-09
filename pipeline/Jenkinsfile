@@ -1,0 +1,19 @@
+#!/bin/groovy
+
+@Library('jenkins-lib')
+import com.stack1.plib*
+
+def configuration = "config.json"
+
+def 	packager = 'package/package.groovy'
+def 	deployer = 'deploy/deploy.groovy'
+def     unitTester = ['tests/unit.groovy']
+def     analyser =  [ 'tests/sonar.groovy', 'tests/checkstyle.groovy' ]
+def     integrationTester = [ 'tests/integration.groovy' ]
+
+Handlers handlers = new Handlers(packager, deployer, unitTester, analyser, integrationTester) as Handlers
+
+String notify = 'admin@exmaple.com'
+Integer timeout = 100
+
+invokePipeline( 'hw', handlers, configuration, notify , timeout )
