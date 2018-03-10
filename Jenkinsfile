@@ -1,7 +1,17 @@
 #!/bin/groovy
 
 node(){
-	checkout scm
+checkout([
+	$class: 'GitSCM', 
+	branches: [[name: '*/master']], 
+	doGenerateSubmoduleConfigurations: false, 
+	extensions: [], 
+	submoduleCfg: [], 
+	userRemoteConfigs: [[
+		credentialsId: '', 
+		url: 'https://github.com/bobclarke/hw.git'
+	]]
+])
 }
 
 // This line pulls in the var and src dirs 
