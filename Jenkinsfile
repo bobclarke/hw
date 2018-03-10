@@ -1,5 +1,9 @@
 #!/bin/groovy
 
+node(){
+	checkout scm
+}
+
 // This line pulls in the var and src dirs 
 // These contain invoke.groovy and Handlers.groovy
 @Library('plib')
