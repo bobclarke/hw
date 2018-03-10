@@ -12,7 +12,7 @@ def pack( String targetEnv ){
       withEnv([
 	"environment=${targetEnv}",
       ]) {
-        sh './package.sh'
+        echo "This is package.groovy"
       }
     } catch (error) {
       echo "FAILURE: Application Build failed"
