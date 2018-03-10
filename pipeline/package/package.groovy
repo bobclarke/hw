@@ -6,7 +6,7 @@ def pack( String targetEnv ){
   node(){
 
     def versionNumber = env.BUILD_NUMBER
-    def packageDir = context.config.package.directory
+    //def packageDir = context.config.package.directory
 
     try {
       withEnv([
