@@ -5,7 +5,6 @@ def pack( String targetEnv ){
 
   node(){
 
-    checkout scm
     def versionNumber = env.BUILD_NUMBER
     def packageDir = context.config.package.directory
 
