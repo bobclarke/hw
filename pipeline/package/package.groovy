@@ -6,7 +6,6 @@ def sayHello(){
 def pack( String targetEnv ){
 
   //def applicationServerEnv = context.config.application.SERVER_ENV ?: 'production'
-  //
 
   node(){
 
