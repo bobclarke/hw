@@ -19,8 +19,8 @@ def pack( String targetEnv ){
       throw error
     } finally{
       step([
-        $class: 'WsCleanup', 
-        notFailBuild: true
+        //$class: 'WsCleanup', 
+        //notFailBuild: true
       ])
     }
   }
