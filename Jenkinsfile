@@ -25,22 +25,8 @@ def packager = "pipeline/package/package.groovy"
 // instantiate a new Handlers object
 Handlers handlers = new Handlers( packager )
 
+// Check if a SCM payload exists
+print ">>> Checking for SCM payload: ${env.payload}"
+
 // call invoke.groovy (this lives in out plib library under the vars dir
 invoke( handlers )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//def z = new com.stack1.testlib.Zot()
-//z.checkOutFrom("hw.git")
