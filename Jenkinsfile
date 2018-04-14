@@ -26,7 +26,7 @@ node(){
 
 // This line pulls in the var and src dirs 
 // These contain invoke.groovy and Handlers.groovy
-@Library('plib')
+@Library('stack1-lib')
 import com.stack1.testlib.* // import Handlers.groovy class
 
 // points to package.groovy
